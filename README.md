@@ -83,34 +83,18 @@ QBShared.Items = {
 Copy and paste this into your qb-core --> Shared --> jobs.lua
 ```
 QBShared.Jobs = {
-["hornysburger"] = {
-		label = "Hornys Employee",
+	hornysburger = {
+		label = 'Hornys Burgers',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
-            ['0'] = {
-                name = "Trainee",
-                payment = 90
-            },
-			['1'] = {
-                name = "Employee",
-                payment = 100
-            },
-			['2'] = {
-                name = "Burger Flipper",
-                payment = 110
-            },
-			['3'] = {
-                name = "Manager",
-                payment = 120
-            },
-			['4'] = {
-                name = "CEO",
-				isboss = true,
-                --bankAuth = true,
-                payment = 135
-            },
-        },
+			['0'] = { name = 'Janitor', payment = 30 },
+			['1'] = { name = 'Employee', payment = 40 },
+			['2'] = { name = 'Sr-Employee', payment = 50 },
+			['3'] = { name = 'Ast-Manager', payment = 60 },
+			['4'] = { name = 'Manager', payment = 75 },
+			['5'] = { name = 'CEO', payment = 90 },
+		},
 	},
 }
 ```
