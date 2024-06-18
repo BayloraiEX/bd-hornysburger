@@ -86,5 +86,58 @@ QBShared.Jobs = {
 	},
 }
 ```
+Copy and paste this into your qb-smallresources --> config.lua
+```
+Config.Consumables = {
+    eat = {
+        -- HORNYS ITEMS --
+        -- Breakfast
+        ['hb_baconroll'] = math.random(45, 65),
+        ['hb_breakfast'] = math.random(45, 65),
+        ['hb_eggs_benedict'] = math.random(45, 65),
+        ['hb_eggsbacon'] = math.random(45, 65),
+        ['hb_frenchtoast'] = math.random(45, 65),
+        ['hb_french_toast_bacon'] = math.random(45, 65),
+        ['hb_hashbrowns'] = math.random(45, 65),
+        ['hb_sausages'] = math.random(45, 65),
+        -- Burgers
+        ['hb_chicken_burger'] = math.random(45, 65),
+        ['hb_dblchicken_burger'] = math.random(45, 65),
+        ['hb_dblhorn_burger'] = math.random(45, 65),
+        ['hb_horn_sandwich'] = math.random(45, 65),
+        ['hb_hornburger_bacon'] = math.random(45, 65),
+        ['hb_hornburger_pickle'] = math.random(45, 65),
+        ['hb_hornburger'] = math.random(45, 65),
+        -- Chicken
+        ['hb_chicken_fillets'] = math.random(45, 65),
+        ['hb_chicken_hornstars'] = math.random(45, 65),
+        ['hb_chicken_salad'] = math.random(45, 65),
+        ['hb_chicken_sandwich'] = math.random(45, 65),
+        ['hb_hunks_o_hen'] = math.random(45, 65),
+        -- Ice cream
+        ['hb_cherry-float'] = math.random(15, 30),
+        ['hb_cherrypopper'] = math.random(15, 30),
+        ['hb_icecream_cake'] = math.random(25, 50),
+        ['hb_icecream_cone'] = math.random(5, 10),
+        ['hb_icecream_nuggets'] = math.random(30, 60),
+    },
+    drink = {
+        --HORNYS ITEMS --
+        ['hb-hercules'] = math.random(45, 65),
+        ['hb-junk'] = math.random(45, 65),
+        ['hb-orangotang'] = math.random(45, 65),
+        ['hb-pepsi'] = math.random(45, 65),
+        ['hb-raine'] = math.random(45, 65),
+        ['hb-sprunk'] = math.random(45, 65),
+        ['hb-water-bottle'] = math.random(45, 65),
+        -- Ice cream
+        ['hb-cherry-float'] = math.random(20, 40),
+        ['hb-cherrypopper'] = math.random(15, 30),
+        ['hb-icecream-cake'] = math.random(10, 20),
+        ['hb-icecream-cone'] = math.random(15, 30),
+        ['hb-icecream-nuggets'] = math.random(10, 20),
+    },
+}
+```
  Next take the images from bd-hornysburgers images folder and put them into your qb-inventory --> html --> images
  And your done! Enjoy
