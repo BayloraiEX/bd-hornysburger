@@ -24,6 +24,7 @@ Config.Items = {
     { name = 'hb_potatoes', amount = 50, price = 1 },
     { name = 'hb_tomato', amount = 50, price = 1 },
     { name = 'hb_cherrys', amount = 50, price = 1 },
+    { name = 'hb_oranges', amount = 50, price = 1 },
     { name = 'hb_eggs', amount = 50, price = 1 },
     { name = 'hb_bacon', amount = 50, price = 1 },
     { name = 'hb_chicken_strips_raw', amount = 50, price = 1 },
