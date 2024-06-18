@@ -1,4 +1,4 @@
-local QBCore = exports[‘qb-core’]:GetCoreObject()
+local QBCore = exports['qb-core']:GetCoreObject()
 
 ----- | MAKE CHERRY FLOAT | -----
 RegisterNetEvent('bd-hornysburger:server:makeCherryFloat', function()

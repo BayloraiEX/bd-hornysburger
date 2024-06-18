@@ -1,4 +1,4 @@
-local QBCore = exports[‘qb-core’]:GetCoreObject()
+local QBCore = exports['qb-core']:GetCoreObject()
 
 ----- | MAKE CHICKEN HORNSTARS | -----
 RegisterNetEvent('bd-hornysburger:server:makeHornstars', function()
