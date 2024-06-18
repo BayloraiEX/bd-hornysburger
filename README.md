@@ -123,19 +123,19 @@ Config.Consumables = {
     },
     drink = {
         --HORNYS ITEMS --
-        ['hb-hercules'] = math.random(45, 65),
-        ['hb-junk'] = math.random(45, 65),
-        ['hb-orangotang'] = math.random(45, 65),
-        ['hb-pepsi'] = math.random(45, 65),
-        ['hb-raine'] = math.random(45, 65),
-        ['hb-sprunk'] = math.random(45, 65),
-        ['hb-water-bottle'] = math.random(45, 65),
+        ['hb_hercules'] = math.random(45, 65),
+        ['hb_junk'] = math.random(45, 65),
+        ['hb_orangotang'] = math.random(45, 65),
+        ['hb_ecola'] = math.random(45, 65),
+        ['hb_raine'] = math.random(45, 65),
+        ['hb_sprunk'] = math.random(45, 65),
+        ['hb_water_bottle'] = math.random(45, 65),
         -- Ice cream
-        ['hb-cherry-float'] = math.random(20, 40),
-        ['hb-cherrypopper'] = math.random(15, 30),
-        ['hb-icecream-cake'] = math.random(10, 20),
-        ['hb-icecream-cone'] = math.random(15, 30),
-        ['hb-icecream-nuggets'] = math.random(10, 20),
+        ['hb_cherry_float'] = math.random(20, 40),
+        ['hb_cherrypopper'] = math.random(15, 30),
+        ['hb_icecream_cake'] = math.random(10, 20),
+        ['hb_icecream_cone'] = math.random(15, 30),
+        ['hb_icecream_nuggets'] = math.random(10, 20),
     },
 }
 ```
