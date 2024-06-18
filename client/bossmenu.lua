@@ -1,4 +1,6 @@
-exports['qb-target']:AddBoxZone("HornysBurgersBossMenu", vector3(1238.41, -348.82, 69.08), 1.45, 1.35, {
+local QBCore = exports['qb-core']:GetCoreObject()
+
+exports['qb-target']:AddBoxZone("HornysBurgersBossMenu", vector3(1255.38, -352.87, 69.08), 1.45, 1.35, {
 	name = "HornysBurgersBossMenu",
 	heading = 347.27,
 	debugPoly = true,
@@ -9,8 +11,8 @@ exports['qb-target']:AddBoxZone("HornysBurgersBossMenu", vector3(1238.41, -348.8
 		{
             type = "client",
             event = "qb-bossmenu:client:OpenMenu",
-			icon = "fa-solid fa-fire-burner",
-			label = "Cook Menu",
+			icon = "fa-solid fa-briefcase",
+			label = "Boss Menu",
 			job = {['hornysburger'] = 4},
 		},
 	},

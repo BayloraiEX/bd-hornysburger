@@ -25,7 +25,7 @@ lib.registerContext({
   options = {
     {
       title = '2x Ecola',
-      description = 'You need 2x Carbonated Water,
+      description = 'You need 2x Carbonated Water',
       icon = 'faucet',
       iconColor = 'Red',
       serverEvent = 'bd-hornysburger:server:makeEcola'
