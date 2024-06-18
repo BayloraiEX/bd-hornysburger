@@ -1,5 +1,6 @@
 # bd-hornysburger
-QBCore Hornys Burgers Job Using ox_lib
+# QBCore Hornys Burgers Job Using ox_lib
+
  Join the Discord for support or questions!
  DISCORD https://discord.gg/hya9t8XfH8
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
