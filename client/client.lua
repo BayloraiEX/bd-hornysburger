@@ -63,7 +63,7 @@ end)
 exports['qb-target']:AddBoxZone("HornysBurgersFrontTray1", vector3(1248.81, -358.92, 69.08), 1.45, 1.35, {
 	name = "HornysBurgersFrontTray1",
 	heading = 347.27,
-	debugPoly = true,
+	debugPoly = false,
 	minZ = 67.08,
 	maxZ = 72.08,
 }, {
@@ -86,7 +86,7 @@ end)
 exports['qb-target']:AddBoxZone("HornysBurgersFrontTray2", vector3(1250.1, -359.35, 69.08), 1.45, 1.35, {
 	name = "HornysBurgersFrontTray2",
 	heading = 347.27,
-	debugPoly = true,
+	debugPoly = false,
 	minZ = 67.08,
 	maxZ = 72.08,
 }, {
@@ -109,7 +109,7 @@ end)
 exports['qb-target']:AddBoxZone("HornysBurgersFrontTray3", vector3(1251.48, -359.69, 69.08), 1.45, 1.35, {
 	name = "HornysBurgersFrontTray3",
 	heading = 347.27,
-	debugPoly = true,
+	debugPoly = false,
 	minZ = 67.08,
 	maxZ = 72.08,
 }, {
@@ -132,7 +132,7 @@ end)
 exports['qb-target']:AddBoxZone("HornysBurgersFrontTray4", vector3(1253.24, -358.77, 69.08), 1.45, 1.35, {
 	name = "HornysBurgersFrontTray4",
 	heading = 347.27,
-	debugPoly = true,
+	debugPoly = false,
 	minZ = 67.08,
 	maxZ = 72.08,
 }, {
@@ -155,7 +155,7 @@ end)
 exports['qb-target']:AddBoxZone("HornysBurgersJobFridge", vector3(1249.66, -352.3, 69.08), 1.45, 1.35, {
 	name = "HornysBurgersJobFridge",
 	heading = 347.27,
-	debugPoly = true,
+	debugPoly = false,
 	minZ = 67.08,
 	maxZ = 72.08,
 }, {
@@ -179,7 +179,7 @@ end)
 exports['qb-target']:AddBoxZone("HornysBurgersJobHeater", vector3(1251.99, -356.94, 69.08), 1.45, 1.35, {
 	name = "HornysBurgersJobHeater",
 	heading = 347.27,
-	debugPoly = true,
+	debugPoly = false,
 	minZ = 67.08,
 	maxZ = 72.08,
 }, {
@@ -203,7 +203,7 @@ end)
 exports['qb-target']:AddBoxZone("HornysBurgersBackStorage", vector3(1247.86, -351.78, 69.08), 1.45, 1.35, {
 	name = "HornysBurgersBackStorage",
 	heading = 347.27,
-	debugPoly = true,
+	debugPoly = false,
 	minZ = 67.08,
 	maxZ = 72.08,
 }, {
@@ -224,10 +224,10 @@ RegisterNetEvent("bd-hornysburger:client:backStorage", function()
 end)
 
 -- SHOP --
-exports['qb-target']:AddBoxZone("HornysBurgersShop", vector3(1253.15, -349.55, 69.08), 1.45, 1.35, {
+exports['qb-target']:AddBoxZone("HornysBurgersShop", vector3(1252.11, -351.45, 69.08), 1.45, 1.35, {
 	name = "HornysBurgersShop",
 	heading = 347.27,
-	debugPoly = true,
+	debugPoly = false,
 	minZ = 67.08,
 	maxZ = 72.08,
 }, {
@@ -251,7 +251,7 @@ end)
 exports['qb-target']:AddBoxZone("HornysBurgersClock", vector3(1244.27, -350.32, 69.08), 1.45, 1.35, {
 	name = "HornysBurgersClock",
 	heading = 347.27,
-	debugPoly = true,
+	debugPoly = false,
 	minZ = 67.08,
 	maxZ = 72.08,
 }, {
