@@ -4,7 +4,7 @@ PlayerJob = {}
 ----- | CREATING BLIP | -----
 CreateThread(function()
     HornysBurgerBlip = AddBlipForCoord(1247.19, -355.98, 74.84)
-    SetBlipDisplay(HornysBurgerBlip, 2)
+    SetBlipDisplay(HornysBurgerBlip, 4)
     SetBlipScale(HornysBurgerBlip, 0.52)
     SetBlipSprite(HornysBurgerBlip, 542)
     SetBlipColour(HornysBurgerBlip, 5)
