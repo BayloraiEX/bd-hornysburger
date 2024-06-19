@@ -100,7 +100,7 @@ RegisterNetEvent('bd-hornysburger:server:ingredientShop', function(name)
     exports['qb-inventory']:CreateShop({
         name = 'ingredientShop',
         label = 'Hornys Shop',
-        coords = vector3(1253.15, -349.55, 69.08), -- optional
+        coords = vector3(1253.15, -349.55, 69.08), -- match where the target is on client side
         slots = 20,
         items = Config.Items
     })
