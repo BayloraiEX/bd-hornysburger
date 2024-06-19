@@ -3,7 +3,7 @@ local QBCore = exports['qb-core']:GetCoreObject()
 exports['qb-target']:AddBoxZone("HornysBurgersFryerMenu", vector3(1254.29, -352.8, 69.08), 1.45, 1.35, {
 	name = "HornysBurgersFryerMenu",
 	heading = 347.27,
-	debugPoly = true,
+	debugPoly = false,
 	minZ = 67.08,
 	maxZ = 72.08,
 }, {
