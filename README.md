@@ -7,7 +7,8 @@
 # Simple and eazy setup!
  Drag bd-hornysburger into your resource folder and ensure bd-hornysburger
 LOAD AFTER QB-TARGET & INVENTORY
-Want to use the van? ensure hornysburger-van in  your server.cfg or add to your carpack
+- ensure [qb]
+- ensure bd-hornysburger
 
  Copy and Paste this into your qb-core --> Shared --> items.lua
 ```
