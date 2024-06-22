@@ -41,7 +41,7 @@ RegisterNetEvent("bd-hornysburger:server:billPlayer", function(playerId, amount)
                     icon = 'burger',
                     iconColor = '#EBE000'
                   })
-		        exports['qb-management']:AddMoney('hornysburger', amount)
+			exports['qb-banking']:AddMoney('hornysburger', amount, 'Sale')
                 else
                     lib.notify(source, {
                         id = 'hornys_burgers',
