@@ -21,3 +21,15 @@ server_scripts {
 dependencies {
     'ox_lib'
 }
+
+files {
+    'vehicle/vehicles.meta',
+    'vehicle/carvariations.meta',
+    'vehicle/carcols.meta',
+    'vehicle/handling.meta'
+}
+
+data_file 'HANDLING_FILE' 'vehicle/handling.meta'
+data_file 'VEHICLE_METADATA_FILE' 'vehicle/vehicles.meta'
+data_file 'CARCOLS_FILE' 'vehicle/carcols.meta'
+data_file 'VEHICLE_VARIATION_FILE' 'vehicle/carvariations.meta'
