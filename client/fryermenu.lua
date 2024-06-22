@@ -19,7 +19,7 @@ exports['qb-target']:AddBoxZone("HornysBurgersFryerMenu", vector3(1254.29, -352.
 	distance = 2.5
 })
 lib.registerContext({
-  id = 'fryer_menu',
+  id = 'hornys_fryer_menu',
   title = 'Fryer Menu',
   options = {
     {
@@ -47,5 +47,5 @@ lib.registerContext({
 })
 ----- | REGISTERING MENU TO 'OpenFryerMenu' | -----
 RegisterNetEvent('bd-hornysburger:client:OpenFryerMenu', function()
-  lib.showContext('fryer_menu')
+  lib.showContext('hornys_fryer_menu')
 end)
