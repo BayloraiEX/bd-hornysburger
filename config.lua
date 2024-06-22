@@ -10,7 +10,7 @@ Config.hornysBurgerGaragePed = {
 
 ----- | VEHICLE STUFF | -----
 Config.VehicleSpawn = vector4(1249.99, -341.62, 69.08, 79.45)
-Config.Vehicle = 'nspeedo' -- Custom Vehicle ( Check 'hornysburger-van' File)
+Config.Vehicle = 'hornysvan' -- Custom Vehicle
 
 ----- | SHOP ITEMS | -----
 Config.Items = {
