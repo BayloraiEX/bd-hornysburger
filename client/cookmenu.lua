@@ -20,7 +20,7 @@ exports['qb-target']:AddBoxZone("HornysBurgersCookMenu", vector3(1253.42, -355.4
 })
 ----- | CREATING MENU | -----
 lib.registerContext({
-  id = 'cook_menu',
+  id = 'hornys_cook_menu',
   title = 'Cook Menu',
   options = {
     {
@@ -146,5 +146,5 @@ lib.registerContext({
 })
 ----- | REGISTERING MENU TO 'OpenCookMenu' | -----
 RegisterNetEvent('bd-hornysburger:client:OpenCookMenu', function()
-  lib.showContext('cook_menu')
+  lib.showContext('hornys_cook_menu')
 end)
