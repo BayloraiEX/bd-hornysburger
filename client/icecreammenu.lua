@@ -20,7 +20,7 @@ exports['qb-target']:AddBoxZone("HornysBurgersIcecreamMenu", vector3(1246.06, -3
 })
 ----- | CREATING MENU | -----
 lib.registerContext({
-  id = 'icecream_menu',
+  id = 'hornys_icecream_menu',
   title = 'Icecream Menu',
   options = {
     {
@@ -62,5 +62,5 @@ lib.registerContext({
 })
 ----- | REGISTERING MENU TO 'OpenDrinkMenu' | -----
 RegisterNetEvent('bd-hornysburger:client:OpenIcecreamMenu', function()
-  lib.showContext('icecream_menu')
+  lib.showContext('hornys_icecream_menu')
 end)
