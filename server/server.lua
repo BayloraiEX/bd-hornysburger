@@ -4,7 +4,7 @@ local QBCore = exports['qb-core']:GetCoreObject()
 RegisterNetEvent('bd-hornysburger:server:frontTray1', function(frontTray1)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local stashName = 'Counter'
+    local stashName = 'Horny Burgers Counter1'
 
     if Player then
         exports['qb-inventory']:OpenInventory(src, stashName, {
@@ -17,7 +17,7 @@ end)
 RegisterNetEvent('bd-hornysburger:server:frontTray2', function(frontTray2)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local stashName = 'Counter'
+    local stashName = 'Horny Burgers Counter2'
 
     if Player then
         exports['qb-inventory']:OpenInventory(src, stashName, {
@@ -30,7 +30,7 @@ end)
 RegisterNetEvent('bd-hornysburger:server:frontTray3', function(frontTray3)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local stashName = 'Counter'
+    local stashName = 'Horny Burgers Counter3'
 
     if Player then
         exports['qb-inventory']:OpenInventory(src, stashName, {
@@ -43,7 +43,7 @@ end)
 RegisterNetEvent('bd-hornysburger:server:frontTray4', function(frontTray4)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local stashName = 'Counter'
+    local stashName = 'Horny Burgers Counter4'
 
     if Player then
         exports['qb-inventory']:OpenInventory(src, stashName, {
@@ -56,7 +56,7 @@ end)
 RegisterNetEvent('bd-hornysburger:server:jobFridge', function(jobFridge)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local stashName = 'Fridge'
+    local stashName = 'Horny Burgers Fridge'
 
     if Player then
         exports['qb-inventory']:OpenInventory(src, stashName, {
@@ -69,7 +69,7 @@ end)
 RegisterNetEvent('bd-hornysburger:server:jobHeater', function(jobHeater)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local stashName = 'Heater'
+    local stashName = 'Horny Burgers Heater'
 
     if Player then
         exports['qb-inventory']:OpenInventory(src, stashName, {
@@ -82,7 +82,7 @@ end)
 RegisterNetEvent('bd-hornysburger:server:backStorage', function(backStorage)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local stashName = 'Storage'
+    local stashName = 'Horny Burgers Storage'
 
     if Player then
         exports['qb-inventory']:OpenInventory(src, stashName, {
