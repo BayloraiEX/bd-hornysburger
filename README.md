@@ -49,6 +49,7 @@ QBShared.Items = {
 	hb_orangotang 		     	 = { name = 'hb_orangotang', 	     label = 'Orang O Tang', 			weight = 180, 		type = 'item', 		image = 'hb_orangotang.png', 		unique = false, 	useable = true, 	shouldClose = true, description = 'Orang O Tang'},
 	hb_raine 		         	 = { name = 'hb_raine', 		     label = 'Raine', 			        weight = 180, 		type = 'item', 		image = 'hb_raine.png', 		unique = false, 	useable = true,     shouldClose = true, description = 'Good ol water'},
 	hb_sprunk 			   	 	 = { name = 'hb_sprunk', 		     label = 'Sprunk', 					weight = 180, 		type = 'item', 		image = 'hb_sprunk.png', 			unique = false, 	useable = true, 	shouldClose = true, description = 'Nothing like an ice cold Sprunk'},
+hb_ecola 		     	     = { name = 'hb_ecola', 			 label = 'Ecola', 			    	weight = 180, 		type = 'item', 		image = 'hb_ecola.png', 		        unique = false, 	useable = true, 	shouldClose = true, description = 'Nothing like an ice cold Ecola'},
 	hb_water_bottle 	     	 = { name = 'hb_water_bottle', 	     label = 'Water Bottle', 	        weight = 180, 		type = 'item', 		image = 'hb_water_bottle.png', 	    unique = false, 	useable = true, 	shouldClose = true, description = 'Good ol water'},
 	-- Ingredients
 	hb_bacon 			 	     = { name = 'hb_bacon', 			 label = 'Bacon', 			    	weight = 150, 		type = 'item', 		image = 'hb_bacon.png', 		    unique = false, 	useable = false, 	shouldClose = true, description = 'Ingredient'},
