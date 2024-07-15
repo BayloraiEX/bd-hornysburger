@@ -1,6 +1,9 @@
 # bd-hornysburger
 # QBCore Hornys Burgers Job Using ox_lib
 
+# VIDEO SHOWCASE
+Youtube - https://www.youtube.com/watch?v=4W2i54_aKxA
+
  Join the Discord for support or questions!
  DISCORD https://discord.gg/hya9t8XfH8
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
