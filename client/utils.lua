@@ -44,25 +44,48 @@ local function CreateLocalNPC(index)
         SetEntityInvincible(hornysBurgerGaragePed, true)
         SetBlockingOfNonTemporaryEvents(hornysBurgerGaragePed, true)
         ----- | CREATING TARGET FOR PED | -----
-        exports['qb-target']:AddTargetEntity(hornysBurgerGaragePed, { 
-            options = {
-            { 
-                type = "client",
-                event = "bd-hornysburger:client:jobGarage",
-                icon = "fa-solid fa-warehouse",
-                label = "Garage",
-                job = "hornysburger"
-            },
-            { 
-                type = "client",
-                event = "bd-hornysburger:client:storeGarage",
-                icon = "fa-solid fa-square-parking",
-                label = "Store Vehicle",
-                job = "hornysburger"
-            },
-            }, 
-            distance = 1.5, 
-        })
+        if Config.InventorySystem == 'ox' then
+            exports.ox_target:addLocalEntity(hornysBurgerGaragePed, {
+                {
+                    name = 'hornys_jobgarage',
+                    event = 'bd-hornysburger:client:jobGarage',
+                    icon = 'fa-solid fa-warehouse',
+                    label = 'Garage',
+                    groups = {
+                        Config.Jobname
+                    },
+                },
+                {
+                    name = 'hornys_storegarage',
+                    event = 'bd-hornysburger:client:storeGarage',
+                    icon = 'fa-solid fa-square-parking',
+                    label = 'Store Vehicles',
+                    groups = {
+                        Config.Jobname
+                    },
+                },
+            })
+        elseif Config.InventorySystem == 'qb' then
+            exports['qb-target']:AddTargetEntity(hornysBurgerGaragePed, { 
+                options = {
+                { 
+                    type = "client",
+                    event = "bd-hornysburger:client:jobGarage",
+                    icon = "fa-solid fa-warehouse",
+                    label = "Garage",
+                    job = "hornysburger"
+                },
+                { 
+                    type = "client",
+                    event = "bd-hornysburger:client:storeGarage",
+                    icon = "fa-solid fa-square-parking",
+                    label = "Store Vehicle",
+                    job = "hornysburger"
+                },
+                }, 
+                distance = 1.5, 
+            })
+        end
     LocalNPCs[index].hornysBurgerGaragePed = hornysBurgerGaragePed
 end
 
