@@ -1,7 +1,7 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
 if Config.InventorySystem == 'ox' then
-  exports.ox_target({
+  exports.ox_target:addBoxZone({
     coords = vector4(1246.27, -356.41, 69.13, 252.21),
     size = vec3(1, 1, 1),
     rotation = 45,
