@@ -67,7 +67,7 @@ end)
 lib.registerContext({
   id = 'hornys_breakfast_menu',
   title = 'Breakfast Menu',
-  menu = 'hornys_cook_menu'
+  menu = 'hornys_cook_menu',
   options = {
     {
       title = '2x Bacon Rolls',
