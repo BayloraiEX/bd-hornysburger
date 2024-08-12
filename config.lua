@@ -13,6 +13,7 @@
 
 Config = {}
 Config.InventorySystem = 'qb' -- Supports both 'ox' & 'qb'
+Config.Jobname = 'hornysburger'
 ----- | PED STUFF | -----
 Config.hornysBurgerGaragePed = {
     {
