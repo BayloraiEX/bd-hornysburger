@@ -59,7 +59,7 @@ RegisterNetEvent('bd-hornysburger:client:storeGarage', function()
     end
 end)
 
-if Config.InventorySystem == 'ox' then
+if Config.TargetSystem == 'ox' then
 	-- TRAY 1 --
 	exports.ox_target:addBoxZone({
 		coords = vector4(1248.76, -358.91, 69.09, 245.44),
@@ -228,7 +228,7 @@ if Config.InventorySystem == 'ox' then
 			},
 		}
 	})
-elseif Config.InventorySystem == 'qb' then
+elseif Config.TargetSystem == 'qb' then
 	----- | CREATING STASHES | -----
 	-- TRAY 1 --
 	exports['qb-target']:AddBoxZone("HornysBurgersFrontTray1", vector3(1248.81, -358.92, 69.08), 1.45, 1.35, {

@@ -1,6 +1,6 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
-if Config.InventorySystem == 'ox' then
+if Config.TargetSystem == 'ox' then
   exports.ox_target:addBoxZone({
     coords = vector4(1253.41, -355.43, 69.09, 3.52),
     size = vec3(1, 1, 1),
@@ -17,7 +17,7 @@ if Config.InventorySystem == 'ox' then
       },
     }
   })
-elseif Config.InventorySystem == 'qb' then
+elseif Config.TargetSystem == 'qb' then
   exports['qb-target']:AddBoxZone("HornysBurgersCookMenu", vector3(1253.42, -355.41, 69.08), 1.45, 1.35, {
     name = "HornysBurgersCookMenu",
     heading = 347.27,

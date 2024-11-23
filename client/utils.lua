@@ -5,7 +5,7 @@ PlayerJob = {}
 CreateThread(function()
     HornysBurgerBlip = AddBlipForCoord(1247.19, -355.98, 74.84)
     SetBlipDisplay(HornysBurgerBlip, 4)
-    SetBlipScale(HornysBurgerBlip, 0.52)
+    SetBlipScale(HornysBurgerBlip, 0.50)
     SetBlipSprite(HornysBurgerBlip, 542)
     SetBlipColour(HornysBurgerBlip, 5)
     SetBlipAsShortRange(HornysBurgerBlip, true)
@@ -44,7 +44,7 @@ local function CreateLocalNPC(index)
         SetEntityInvincible(hornysBurgerGaragePed, true)
         SetBlockingOfNonTemporaryEvents(hornysBurgerGaragePed, true)
         ----- | CREATING TARGET FOR PED | -----
-        if Config.InventorySystem == 'ox' then
+        if Config.TargetSystem == 'ox' then
             exports.ox_target:addLocalEntity(hornysBurgerGaragePed, {
                 {
                     name = 'hornys_jobgarage',
@@ -65,7 +65,7 @@ local function CreateLocalNPC(index)
                     },
                 },
             })
-        elseif Config.InventorySystem == 'qb' then
+        elseif Config.TargetSystem == 'qb' then
             exports['qb-target']:AddTargetEntity(hornysBurgerGaragePed, { 
                 options = {
                 { 
