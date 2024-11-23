@@ -402,6 +402,8 @@ elseif Config.TargetSystem == 'qb' then
 	RegisterNetEvent("bd-hornysburger:client:ingredientShop", function()
 		TriggerServerEvent('bd-hornysburger:server:ingredientShop')
 	end)
+end
+if Config.TargetSystem == 'qb' then
 	----- | SETTING THE CLOCK IN/OUT TARGET | -----
 	exports['qb-target']:AddBoxZone("HornysBurgersClock", vector3(1244.27, -350.32, 69.08), 1.45, 1.35, {
 		name = "HornysBurgersClock",
@@ -421,8 +423,25 @@ elseif Config.TargetSystem == 'qb' then
 		},
 		distance = 2.5
 	})
-	----- | REGISTERING THE EVENT | -----
-	RegisterNetEvent('bd-hornysburger:client:ToggleDuty', function()
-		TriggerServerEvent("QBCore:ToggleDuty")
-	end)
+elseif Config.TargetSystem == 'ox' then
+	exports.ox_target:addBoxZone({
+		coords = vector4(1244.21, -350.45, 69.08, 345.8),
+		size = vec3(1, 1, 1),
+		rotation = 45,
+		options = {
+			{
+				name = 'hornysburger_clock',
+				icon = 'fa-solid fa-clipboard-user',
+				event = 'bd-hornysburger:client:ToggleDuty',
+				label = 'Clock In/Out',
+				groups = {
+					Config.Jobname
+				},
+			},
+		}
+	})
 end
+----- | REGISTERING THE EVENT | -----
+RegisterNetEvent('bd-hornysburger:client:ToggleDuty', function()
+	TriggerServerEvent("QBCore:ToggleDuty")
+end)
