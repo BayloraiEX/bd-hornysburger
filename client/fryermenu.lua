@@ -7,10 +7,10 @@ if Config.TargetSystem == 'ox' then
     rotation = 45,
     options = {
       {
-        name = 'hornys_fryer',
+        name = 'hornysburger_fryermenu',
         event = 'bd-hornysburger:client:OpenFryerMenu',
         icon = 'fa-solid fa-fire-burner',
-        label = 'Fryer',
+        label = 'Fryer Menu',
         groups = {
           Config.Jobname
         },
@@ -18,7 +18,7 @@ if Config.TargetSystem == 'ox' then
     }
   })
 elseif Config.TargetSystem == 'qb' then
-  exports['qb-target']:AddBoxZone("HornysBurgersFryerMenu", vector3(1254.29, -352.8, 69.08), 1.45, 1.35, {
+  exports['qb-target']:AddBoxZone("HornysBurgersFryerMenu", vector3(1253.42, -355.41, 69.08), 1.45, 1.35, {
     name = "HornysBurgersFryerMenu",
     heading = 347.27,
     debugPoly = false,
@@ -27,51 +27,53 @@ elseif Config.TargetSystem == 'qb' then
   }, {
     options = {
       {
-              type = "client",
-              event = "bd-hornysburger:client:OpenFryerMenu",
+        type = "client",
+        event = "bd-hornysburger:client:OpenFryerMenu",
         icon = "fa-solid fa-fire-burner",
         label = "Fryer Menu",
-        job = "hornysburger",
+        job = Config.Jobname,
       },
     },
     distance = 2.5
   })
 end
+----- | CREATING MENU | -----
 lib.registerContext({
   id = 'hornys_fryer_menu',
   title = 'Fryer Menu',
   options = {
     {
       title = '2x Hashbrowns',
-      description = '2x Potatoes',
+      description = 'You need 2x Potatoes',
       icon = 'fire',
       iconColor = 'DarkSalmon',
-      event = 'bd-hornysburger:client:makeHashbrowns'
+      event = 'bd-hornysburger:client:makeHashBrowns'
     },
     {
       title = '2x Chicken Fillets',
-      description = '2x Raw Chicken Strips',
+      description = 'You need 2x Raw Chicken Strips',
       icon = 'fire',
       iconColor = 'DarkSalmon',
-      event = 'bd-hornysburger:client:makeChickenFillets'
+      event = 'bd-hornysburger:client:makeChickenStrips'
     },
     {
       title = '2x Chicken Hornstars',
-      description = '2x Raw Chicken Strips',
+      description = 'You need 2x Raw Chicken Stips',
       icon = 'fire',
       iconColor = 'DarkSalmon',
-      event = 'bd-hornysburger:client:makeHornstars'
-    }
+      event = 'bd-hornysburger:client:makeHornStars'
+    },
   }
 })
------ | REGISTERING MENU TO 'OpenFryerMenu' | -----
+----- | REGISTERING MENU TO 'OpenCookMenu' | -----
 RegisterNetEvent('bd-hornysburger:client:OpenFryerMenu', function()
   lib.showContext('hornys_fryer_menu')
 end)
-
-RegisterNetEvent('bd-hornysburger:client:makeHashbrowns', function()
+----- | CREATING PROGRESS CIRCLE | -----
+-- BREAKFAST ITEMS --
+RegisterNetEvent('bd-hornysburger:client:makeHashBrowns', function()
   if lib.progressCircle({
-    duration = 1250,
+    duration = 1750,
     position = 'bottom',
     useWhileDead = false,
     canCancel = true,
@@ -86,13 +88,13 @@ RegisterNetEvent('bd-hornysburger:client:makeHashbrowns', function()
       scenario = 'mini@repair',
     },
   }) then
-    TriggerServerEvent('bd-hornysburger:server:makeHashbrowns')
+    TriggerServerEvent('bd-hornysburger:server:makeHashBrowns')
   else
   end
 end)
-RegisterNetEvent('bd-hornysburger:client:makeChickenFillets', function()
+RegisterNetEvent('bd-hornysburger:client:makeChickenStrips', function()
   if lib.progressCircle({
-    duration = 1250,
+    duration = 1750,
     position = 'bottom',
     useWhileDead = false,
     canCancel = true,
@@ -107,13 +109,13 @@ RegisterNetEvent('bd-hornysburger:client:makeChickenFillets', function()
       scenario = 'mini@repair',
     },
   }) then
-    TriggerServerEvent('bd-hornysburger:server:makeChickenFillets')
+    TriggerServerEvent('bd-hornysburger:server:makeChickenStrips')
   else
   end
 end)
-RegisterNetEvent('bd-hornysburger:client:makeHornstars', function()
+RegisterNetEvent('bd-hornysburger:client:makeHornStars', function()
   if lib.progressCircle({
-    duration = 1250,
+    duration = 1750,
     position = 'bottom',
     useWhileDead = false,
     canCancel = true,
@@ -128,7 +130,7 @@ RegisterNetEvent('bd-hornysburger:client:makeHornstars', function()
       scenario = 'mini@repair',
     },
   }) then
-    TriggerServerEvent('bd-hornysburger:server:makeHornstars')
+    TriggerServerEvent('bd-hornysburger:server:makeHornStars')
   else
   end
 end)
