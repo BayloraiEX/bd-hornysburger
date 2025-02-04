@@ -3,7 +3,7 @@ game 'gta5'
 lua54 'yes'
 author 'Baylorai Development'
 description 'QBCore Hornys Burger Job using ox_lib'
-version '0.1.0'
+version '0.1.1'
 
 client_scripts {
     'client/*.lua',
