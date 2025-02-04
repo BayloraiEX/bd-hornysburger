@@ -37,7 +37,7 @@ if Config.InventorySystem == 'ox' then
     })
 elseif Config.InventorySystem == 'qb' then
     -- TRAY 1 --
-    RegisterNetEvent('bd-hornysburger:server:frontTray1', function(frontTray1)
+    RegisterNetEvent('bd-hornysburger:server:hornysburgerTray1', function(hornysburgerTray1)
         local src = source
         local Player = QBCore.Functions.GetPlayer(src)
         local stashName = 'Horny Burgers Counter1'
@@ -50,7 +50,7 @@ elseif Config.InventorySystem == 'qb' then
         end
     end)
     -- TRAY 2 --
-    RegisterNetEvent('bd-hornysburger:server:frontTray2', function(frontTray2)
+    RegisterNetEvent('bd-hornysburger:server:hornysburgerTray2', function(hornysburgerTray2)
         local src = source
         local Player = QBCore.Functions.GetPlayer(src)
         local stashName = 'Horny Burgers Counter2'
@@ -63,7 +63,7 @@ elseif Config.InventorySystem == 'qb' then
         end
     end)
     -- TRAY 3 --
-    RegisterNetEvent('bd-hornysburger:server:frontTray3', function(frontTray3)
+    RegisterNetEvent('bd-hornysburger:server:hornysburgerTray3', function(hornysburgerTray3)
         local src = source
         local Player = QBCore.Functions.GetPlayer(src)
         local stashName = 'Horny Burgers Counter3'
@@ -76,7 +76,7 @@ elseif Config.InventorySystem == 'qb' then
         end
     end)
     -- TRAY 4 --
-    RegisterNetEvent('bd-hornysburger:server:frontTray4', function(frontTray4)
+    RegisterNetEvent('bd-hornysburger:server:hornysburgerTray4', function(hornysburgerTray4)
         local src = source
         local Player = QBCore.Functions.GetPlayer(src)
         local stashName = 'Horny Burgers Counter4'
@@ -89,7 +89,7 @@ elseif Config.InventorySystem == 'qb' then
         end
     end)
     -- FRIDGE --
-    RegisterNetEvent('bd-hornysburger:server:jobFridge', function(jobFridge)
+    RegisterNetEvent('bd-hornysburger:server:hornysburgerFridge', function(hornysburgerFridge)
         local src = source
         local Player = QBCore.Functions.GetPlayer(src)
         local stashName = 'Horny Burgers Fridge'
@@ -102,7 +102,7 @@ elseif Config.InventorySystem == 'qb' then
         end
     end)
     -- HEATER --
-    RegisterNetEvent('bd-hornysburger:server:jobHeater', function(jobHeater)
+    RegisterNetEvent('bd-hornysburger:server:hornysburgerHeater', function(hornysburgerHeater)
         local src = source
         local Player = QBCore.Functions.GetPlayer(src)
         local stashName = 'Horny Burgers Heater'
@@ -115,7 +115,7 @@ elseif Config.InventorySystem == 'qb' then
         end
     end)
     -- BACK STORAGE --
-    RegisterNetEvent('bd-hornysburger:server:backStorage', function(backStorage)
+    RegisterNetEvent('bd-hornysburger:server:hornysburgerbackStorage', function(hornysburgerbackStorage)
         local src = source
         local Player = QBCore.Functions.GetPlayer(src)
         local stashName = 'Horny Burgers Storage'

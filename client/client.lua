@@ -58,7 +58,75 @@ RegisterNetEvent('bd-hornysburger:client:storeGarage', function()
         })
     end
 end)
-
+if Config.InventorySystem == 'qb' then
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerTray1", function()
+		TriggerServerEvent('bd-hornysburger:server:hornysburgerTray1')
+	end)
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerTray2", function()
+		TriggerServerEvent('bd-hornysburger:server:hornysburgerTray2')
+	end)
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerTray3", function()
+		TriggerServerEvent('bd-hornysburger:server:hornysburgerTray3')
+	end)
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerTray4", function()
+		TriggerServerEvent('bd-hornysburger:server:hornysburgerTray4')
+	end)
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerFridge", function()
+		TriggerServerEvent('bd-hornysburger:server:hornysburgerFridge')
+	end)
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerHeater", function()
+		TriggerServerEvent('bd-hornysburger:server:hornysburgerHeater')
+	end)
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerbackStorage", function()
+		TriggerServerEvent('bd-hornysburger:server:hornysburgerbackStorage')
+	end)
+	RegisterNetEvent("bd-hornysburger:client:ingredientShop", function()
+		TriggerServerEvent('bd-hornysburger:server:ingredientShop')
+	end)
+elseif Config.InventorySystem == 'ox' then
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerTray1", function()
+		if ox_inventory:openInventory('stash', 'hornysburgerTray1') == false then
+			TriggerServerEvent('ox:hornysburgerTray1')
+			ox_inventory:openInventory('stash', 'hornysburgerTray1')
+		end
+	end)
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerTray2", function()
+		if ox_inventory:openInventory('stash', 'hornysburgerTray2') == false then
+			TriggerServerEvent('ox:hornysburgerTray2')
+			ox_inventory:openInventory('stash', 'hornysburgerTray2')
+		end
+	end)
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerTray3", function()
+		if ox_inventory:openInventory('stash', 'hornysburgerTray3') == false then
+			TriggerServerEvent('ox:hornysburgerTray3')
+			ox_inventory:openInventory('stash', 'hornysburgerTray3')
+		end
+	end)
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerTray4", function()
+		if ox_inventory:openInventory('stash', 'hornysburgerTray4') == false then
+			TriggerServerEvent('ox:hornysburgerTray4')
+			ox_inventory:openInventory('stash', 'hornysburgerTray4')
+		end
+	end)
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerFridge", function()
+		if ox_inventory:openInventory('stash', 'hornysburgerFridge') == false then
+			TriggerServerEvent('ox:hornysburgerFridge')
+			ox_inventory:openInventory('stash', 'hornysburgerFridge')
+		end
+	end)
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerHeater", function()
+		if ox_inventory:openInventory('stash', 'hornysburgerHeater') == false then
+			TriggerServerEvent('ox:hornysburgerHeater')
+			ox_inventory:openInventory('stash', 'hornysburgerHeater')
+		end
+	end)
+	RegisterNetEvent("bd-hornysburger:client:hornysburgerbackStorage", function()
+		if ox_inventory:openInventory('stash', 'hornysburgerbackStorage') == false then
+			TriggerServerEvent('ox:hornysburgerbackStorage')
+			ox_inventory:openInventory('stash', 'hornysburgerbackStorage')
+		end
+	end)
+end
 if Config.TargetSystem == 'ox' then
 	-- TRAY 1 --
 	exports.ox_target:addBoxZone({
@@ -68,18 +136,12 @@ if Config.TargetSystem == 'ox' then
 		options = {
 			{
 				name = 'hornyburgers_tray1',
-				event = 'bd-hornysburger:client:frontTray1',
+				event = 'bd-hornysburger:client:hornysburgerTray1',
 				icon = 'fa-solid fa-equals',
 				label = 'Tray',
 			},
 		}
 	})
-	RegisterNetEvent("bd-hornysburger:client:frontTray1", function()
-		if ox_inventory:openInventory('stash', 'hornysburgerTray1') == false then
-			TriggerServerEvent('ox:hornysburgerTray1')
-			ox_inventory:openInventory('stash', 'hornysburgerTray1')
-		end
-	end)
 	-- TRAY 2 --
 	exports.ox_target:addBoxZone({
 		coords = vector4(1250.13, -359.37, 69.08, 250.19),
@@ -88,18 +150,12 @@ if Config.TargetSystem == 'ox' then
 		options = {
 			{
 				name = 'hornyburgers_tray2',
-				event = 'bd-hornysburger:client:frontTray2',
+				event = 'bd-hornysburger:client:hornysburgerTray2',
 				icon = 'fa-solid fa-equals',
 				label = 'Tray',
 			},
 		}
 	})
-	RegisterNetEvent("bd-hornysburger:client:frontTray2", function()
-		if ox_inventory:openInventory('stash', 'hornysburgerTray2') == false then
-			TriggerServerEvent('ox:hornysburgerTray2')
-			ox_inventory:openInventory('stash', 'hornysburgerTray2')
-		end
-	end)
 	-- TRAY 3 --
 	exports.ox_target:addBoxZone({
 		coords = vector4(1251.53, -359.67, 69.09, 111.96),
@@ -108,18 +164,12 @@ if Config.TargetSystem == 'ox' then
 		options = {
 			{
 				name = 'hornyburgers_tray3',
-				event = 'bd-hornysburger:client:frontTray3',
+				event = 'bd-hornysburger:client:hornysburgerTray3',
 				icon = 'fa-solid fa-equals',
 				label = 'Tray',
 			},
 		}
 	})
-	RegisterNetEvent("bd-hornysburger:client:frontTray3", function()
-		if ox_inventory:openInventory('stash', 'hornysburgerTray3') == false then
-			TriggerServerEvent('ox:hornysburgerTray3')
-			ox_inventory:openInventory('stash', 'hornysburgerTray3')
-		end
-	end)
 	-- TRAY 4 --
 	exports.ox_target:addBoxZone({
 		coords = vector4(1253.0, -358.92, 69.09, 344.73),
@@ -128,18 +178,12 @@ if Config.TargetSystem == 'ox' then
 		options = {
 			{
 				name = 'hornyburgers_tray4',
-				event = 'bd-hornysburger:client:frontTray4',
+				event = 'bd-hornysburger:client:hornysburgerTray4',
 				icon = 'fa-solid fa-equals',
 				label = 'Tray',
 			},
 		}
 	})
-	RegisterNetEvent("bd-hornysburger:client:frontTray4", function()
-		if ox_inventory:openInventory('stash', 'hornysburgerTray4') == false then
-			TriggerServerEvent('ox:hornysburgerTray4')
-			ox_inventory:openInventory('stash', 'hornysburgerTray4')
-		end
-	end)
 	-- FRIDGE --
 	exports.ox_target:addBoxZone({
 		coords = vector4(1249.56, -352.16, 69.09, 164.43),
@@ -148,7 +192,7 @@ if Config.TargetSystem == 'ox' then
 		options = {
 			{
 				name = 'hornyburgers_fridge',
-				event = 'bd-hornysburger:client:fridge',
+				event = 'bd-hornysburger:client:hornysburgerFridge',
 				icon = 'fa-solid fa-temperature-empty',
 				label = 'Fridge',
 				groups = {
@@ -157,12 +201,6 @@ if Config.TargetSystem == 'ox' then
 			},
 		}
 	})
-	RegisterNetEvent("bd-hornysburger:client:fridge", function()
-		if ox_inventory:openInventory('stash', 'hornysburgerFridge') == false then
-			TriggerServerEvent('ox:hornysburgerFridge')
-			ox_inventory:openInventory('stash', 'hornysburgerFridge')
-		end
-	end)
 	-- HEATER --
 	exports.ox_target:addBoxZone({
 		coords = vector4(1251.94, -356.68, 68.86, 73.96),
@@ -171,7 +209,7 @@ if Config.TargetSystem == 'ox' then
 		options = {
 			{
 				name = 'hornyburgers_heater',
-				event = 'bd-hornysburger:client:heater',
+				event = 'bd-hornysburger:client:hornysburgerHeater',
 				icon = 'fa-solid fa-temperature-arrow-up',
 				label = 'Heater',
 				groups = {
@@ -180,12 +218,6 @@ if Config.TargetSystem == 'ox' then
 			},
 		}
 	})
-	RegisterNetEvent("bd-hornysburger:client:heater", function()
-		if ox_inventory:openInventory('stash', 'hornysburgerHeater') == false then
-			TriggerServerEvent('ox:hornysburgerHeater')
-			ox_inventory:openInventory('stash', 'hornysburgerHeater')
-		end
-	end)
 	-- BACK STORAGE --
 	exports.ox_target:addBoxZone({
 		coords = vector4(1247.99, -352.0, 69.09, 335.54),
@@ -194,7 +226,7 @@ if Config.TargetSystem == 'ox' then
 		options = {
 			{
 				name = 'hornyburgers_storage',
-				event = 'bd-hornysburger:client:storage',
+				event = 'bd-hornysburger:client:hornysburgerbackStorage',
 				icon = 'fa-solid fa-boxes-stacked',
 				label = 'Storage',
 				groups = {
@@ -203,12 +235,6 @@ if Config.TargetSystem == 'ox' then
 			},
 		}
 	})
-	RegisterNetEvent("bd-hornysburger:client:storage", function()
-		if ox_inventory:openInventory('stash', 'hornysburgerStorage') == false then
-			TriggerServerEvent('ox:hornysburgerStorage')
-			ox_inventory:openInventory('stash', 'hornysburgerStorage')
-		end
-	end)
 	-- SHOP --
 	exports.ox_target:addBoxZone({
 		coords = vector4(1252.21, -351.09, 69.08, 343.29),
@@ -217,17 +243,36 @@ if Config.TargetSystem == 'ox' then
 		options = {
 			{
 				name = 'hornysburger_shop',
+				event = 'bd-hornysburger:client:ingredientShop',
 				icon = 'fa-solid fa-shopping-basket',
 				label = 'Ingredient Shop',
 				groups = {
 					Config.Jobname
 				},
-				onSelect = function ()
-					exports.ox_inventory:openInventory('shop', {type = 'hbshop'})
-				end
 			},
 		}
 	})
+	if Config.TargetSystem and Config.InventorySystem == 'ox' then
+		exports.ox_target:addBoxZone({
+			coords = vector4(1252.21, -351.09, 69.08, 343.29),
+			size = vec3(1, 1, 1),
+			rotation = 45,
+			options = {
+				{
+					name = 'hornysburger_shop',
+					icon = 'fa-solid fa-shopping-basket',
+					label = 'Ingredient Shop',
+					groups = {
+						Config.Jobname
+					},
+					onSelect = function ()
+						exports.ox_inventory:openInventory('shop', {type = 'hbshop'})
+					end
+				},
+			}
+		})
+	else
+	end
 elseif Config.TargetSystem == 'qb' then
 	----- | CREATING STASHES | -----
 	-- TRAY 1 --
@@ -241,16 +286,13 @@ elseif Config.TargetSystem == 'qb' then
 		options = {
 			{
 				type = "client",
-				event = "bd-hornysburger:client:frontTray1",
+				event = "bd-hornysburger:client:hornysburgerTray1",
 				icon = "fa-solid fa-equals",
 				label = "Counter",
 			},
 		},
 		distance = 2.5
 	})
-	RegisterNetEvent("bd-hornysburger:client:frontTray1", function()
-		TriggerServerEvent('bd-hornysburger:server:frontTray1')
-	end)
 	-- TRAY 2 --
 	exports['qb-target']:AddBoxZone("HornysBurgersFrontTray2", vector3(1250.1, -359.35, 69.08), 1.45, 1.35, {
 		name = "HornysBurgersFrontTray2",
@@ -262,16 +304,13 @@ elseif Config.TargetSystem == 'qb' then
 		options = {
 			{
 				type = "client",
-				event = "bd-hornysburger:client:frontTray2",
+				event = "bd-hornysburger:client:hornysburgerTray2",
 				icon = "fa-solid fa-equals",
 				label = "Counter",
 			},
 		},
 		distance = 2.5
 	})
-	RegisterNetEvent("bd-hornysburger:client:frontTray2", function()
-		TriggerServerEvent('bd-hornysburger:server:frontTray2')
-	end)
 	-- TRAY 3 --
 	exports['qb-target']:AddBoxZone("HornysBurgersFrontTray3", vector3(1251.48, -359.69, 69.08), 1.45, 1.35, {
 		name = "HornysBurgersFrontTray3",
@@ -283,16 +322,13 @@ elseif Config.TargetSystem == 'qb' then
 		options = {
 			{
 				type = "client",
-				event = "bd-hornysburger:client:frontTray3",
+				event = "bd-hornysburger:client:hornysburgerTray3",
 				icon = "fa-solid fa-equals",
 				label = "Counter",
 			},
 		},
 		distance = 2.5
 	})
-	RegisterNetEvent("bd-hornysburger:client:frontTray3", function()
-		TriggerServerEvent('bd-hornysburger:server:frontTray3')
-	end)
 	-- TRAY 4 --
 	exports['qb-target']:AddBoxZone("HornysBurgersFrontTray4", vector3(1253.24, -358.77, 69.08), 1.45, 1.35, {
 		name = "HornysBurgersFrontTray4",
@@ -304,16 +340,13 @@ elseif Config.TargetSystem == 'qb' then
 		options = {
 			{
 				type = "client",
-				event = "bd-hornysburger:client:frontTray4",
+				event = "bd-hornysburger:client:hornysburgerTray4",
 				icon = "fa-solid fa-equals",
 				label = "Counter",
 			},
 		},
 		distance = 2.5
 	})
-	RegisterNetEvent("bd-hornysburger:client:frontTray4", function()
-		TriggerServerEvent('bd-hornysburger:server:frontTray4')
-	end)
 	-- FRIDGE --
 	exports['qb-target']:AddBoxZone("HornysBurgersJobFridge", vector3(1249.66, -352.3, 69.08), 1.45, 1.35, {
 		name = "HornysBurgersJobFridge",
@@ -325,7 +358,7 @@ elseif Config.TargetSystem == 'qb' then
 		options = {
 			{
 				type = "client",
-				event = "bd-hornysburger:client:jobFridge",
+				event = "bd-hornysburger:client:hornysburgerFridge",
 				icon = "fa-solid fa-temperature-empty",
 				label = "Fridge",
 				job = "hornysburger",
@@ -333,9 +366,6 @@ elseif Config.TargetSystem == 'qb' then
 		},
 		distance = 2.5
 	})
-	RegisterNetEvent("bd-hornysburger:client:jobFridge", function()
-		TriggerServerEvent('bd-hornysburger:server:jobFridge')
-	end)
 	-- HEATER --
 	exports['qb-target']:AddBoxZone("HornysBurgersJobHeater", vector3(1251.99, -356.94, 69.08), 1.45, 1.35, {
 		name = "HornysBurgersJobHeater",
@@ -347,7 +377,7 @@ elseif Config.TargetSystem == 'qb' then
 		options = {
 			{
 				type = "client",
-				event = "bd-hornysburger:client:jobHeater",
+				event = "bd-hornysburger:client:hornysburgerHeater",
 				icon = "fa-solid fa-temperature-arrow-up",
 				label = "Heater",
 				job = "hornysburger",
@@ -355,9 +385,6 @@ elseif Config.TargetSystem == 'qb' then
 		},
 		distance = 2.5
 	})
-	RegisterNetEvent("bd-hornysburger:client:jobHeater", function()
-		TriggerServerEvent('bd-hornysburger:server:jobHeater')
-	end)
 	-- BACK STORAGE --
 	exports['qb-target']:AddBoxZone("HornysBurgersBackStorage", vector3(1247.86, -351.78, 69.08), 1.45, 1.35, {
 		name = "HornysBurgersBackStorage",
@@ -369,7 +396,7 @@ elseif Config.TargetSystem == 'qb' then
 		options = {
 			{
 				type = "client",
-				event = "bd-hornysburger:client:backStorage",
+				event = "bd-hornysburger:client:hornysburgerbackStorage",
 				icon = "fa-solid fa-boxes-stacked",
 				label = "Storage",
 				job = "hornysburger",
@@ -377,9 +404,6 @@ elseif Config.TargetSystem == 'qb' then
 		},
 		distance = 2.5
 	})
-	RegisterNetEvent("bd-hornysburger:client:backStorage", function()
-		TriggerServerEvent('bd-hornysburger:server:backStorage')
-	end)
 	-- SHOP --
 	exports['qb-target']:AddBoxZone("HornysBurgersShop", vector3(1252.11, -351.45, 69.08), 1.45, 1.35, {
 		name = "HornysBurgersShop",
@@ -399,9 +423,6 @@ elseif Config.TargetSystem == 'qb' then
 		},
 		distance = 2.5
 	})
-	RegisterNetEvent("bd-hornysburger:client:ingredientShop", function()
-		TriggerServerEvent('bd-hornysburger:server:ingredientShop')
-	end)
 end
 if Config.TargetSystem == 'qb' then
 	----- | SETTING THE CLOCK IN/OUT TARGET | -----

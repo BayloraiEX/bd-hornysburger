@@ -13,7 +13,7 @@
 
 Config = {}
 Config.InventorySystem = 'qb' -- Supports both 'ox' & 'qb' ( OX RELEASE THAT STILL SUPPORTS QBCORE )
-Config.TargetSystem = 'qb' -- Supports both 'qb' & 'ox' ( OX RELEASE THAT STILL SUPPORTS QBCORE )
+Config.TargetSystem = 'ox' -- Supports both 'qb' & 'ox' ( OX RELEASE THAT STILL SUPPORTS QBCORE )
 Config.Jobname = 'hornysburger'
 ----- | PED STUFF | -----
 Config.hornysBurgerGaragePed = {
