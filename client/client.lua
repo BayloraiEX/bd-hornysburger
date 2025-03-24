@@ -252,7 +252,7 @@ if Config.TargetSystem == 'ox' then
 			},
 		}
 	})
-	if Config.TargetSystem and Config.InventorySystem == 'ox' then
+	if Config.TargetSystem == 'ox' and Config.InventorySystem == 'ox' then
 		exports.ox_target:addBoxZone({
 			coords = vector4(1252.21, -351.09, 69.08, 343.29),
 			size = vec3(1, 1, 1),
